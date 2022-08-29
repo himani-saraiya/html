@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>The Document Object</h1>
+    <h2>hello</h2>
+
+    <p id="pq">Create method:</p>
+
+    <!-- <script>
+        const para = document.createElement("p");
+        para.innerText = "This is a navgurukul.";
+
+        document.body.appendChild(para);
+    </script>
+ -->
+    <script>
+        document.getElementById("pq").addEventListener("click", list)
+
+        function list() {
+            alert("anything")
+                //document.getElementById("pq").innerHTML = "navgurukul"
+        }
+        document.getElementById("pq").style.color = "blue";
+    </script>
+</body>
+
+</html>
