@@ -1,0 +1,2 @@
+a="himmi"
+print(a)

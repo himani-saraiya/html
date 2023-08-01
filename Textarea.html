@@ -1,0 +1,113 @@
+<!-- <HTML>
+
+<HEAD>
+    <TITLE>Registration Form</TITLE>
+</HEAD>
+
+<BODY bgcolor="lightblue">
+    <h1>
+        <center>Registration Form</center>
+    </h1>
+    <FORM id="form_Registration" action="form.html">
+        <center>
+
+            <tr>
+                <td>
+                    <textarea id="mytextarea" rows="5" cols="70"></textarea>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <span id="charCount">/100 characters remaining</span>
+                </td>
+            </tr>
+            <TR>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <p id="password-error" style="color: red;"></p>
+            </TR>
+            <label for="length">Password Length:</label>
+            <input type="number" id="length" min="4" max="20" value="8">
+
+            <div class="checkbox-group">
+                <label for="uppercase">Include Uppercase Letters:</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+
+            <div class="checkbox-group">
+                <label for="lowercase">Include Lowercase Letters:</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+
+            <div class="checkbox-group">
+                <label for="special">Include Special Characters:</label>
+                <input type="checkbox" id="special" checked>
+            </div>
+
+            <div class="checkbox-group">
+                <label for="numbers">Include Numbers:</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+
+
+            </TABLE>
+
+        </center>
+    </FORM>
+    <script src="./Textarea.js"></script>
+
+</BODY>
+
+</HTML>
+
+</html> -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="password-form">
+            <label for="length">Password Length:</label>
+            <input type="password" id="length" min="4" max="20" value="8">
+
+            <div class="checkbox-group">
+                <label for="uppercase">Include Uppercase Letters:</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+
+            <div class="checkbox-group">
+                <label for="lowercase">Include Lowercase Letters:</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+
+            <div class="checkbox-group">
+                <label for="special">Include Special Characters:</label>
+                <input type="checkbox" id="special" checked>
+            </div>
+
+            <div class="checkbox-group">
+                <label for="numbers">Include Numbers:</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+
+            <button id="generate-btn">Generate Password</button>
+
+            <div class="output">
+                <input type="text" id="password-output" readonly>
+                <button id="copy-btn">Copy</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Textarea.js"></script>
+</body>
+
+</html>

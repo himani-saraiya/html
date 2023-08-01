@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: yellowgreen;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            float: right;
+            cursor: pointer;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            margin-right: 200px;
+        }
+
+        #name {
+            font-size: 100px;
+        }
+
+        #showWord {
+            font-size: 50px;
+            margin: 100px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="name">Hangman</h1>
+    <h1 id="showWord">The word will appear here</h1>
+    <button onclick="check()">Guess</button>
+</body>
+<script>
+    var wordlist = ["apple", "banana", "mango"];
+    var listLength = wordlist.length;
+    var word;
+    var remain
+    var quesword = [];
+    var guess
+    game();
+
+    function game() {
+        word = wordlist[Math.floor(Math.random() * listLength)];
+        var wordlength = word.length;
+        quesword = [];
+        for (var i = 0; i < wordlength; i++) {
+            quesword[i] = "_";
+        }
+        document.getElementById("showWord").innerHTML = quesword.join("");
+        remain = wordlength;
+    }
+
+    function check() {
+        if (remain > 0) {
+            var guess = prompt("Guess a letter in the word");
+            for (var j = 0; j < wordlength; j++) {
+                if (word[j] === guess) {
+                    quesword[j] = guess;
+                    document.getElementById("showWord").innerHTML = quesword.join("");
+                    remain--;
+                }
+            }
+            if (remain === 0) {
+                alert("Congratulations! You have guessed the word.");
+            }
+        }
+    }
+</script>
+
+</html>

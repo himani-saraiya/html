@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<style>
+    h1 {
+        color: black;
+    }
+
+    #tab {
+        background-color: aliceblue;
+        height: 60px;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .button {
+        background-color: lightgrey;
+        color: white;
+        float: left;
+        border: none;
+        cursor: pointer;
+        padding: 0px;
+        font-size: 20px;
+        width: 25%;
+        height: 60px;
+    }
+
+    #laalbagh {
+        background-color: aquamarine;
+        padding: 10px;
+        margin: 10px;
+        height: 260px;
+    }
+
+    img {
+        width: 350px;
+        float: right;
+    }
+
+    #h1laal {
+        color: blueviolet;
+    }
+
+    #nandihills {
+        background-color: blanchedalmond;
+        padding: 10px;
+        margin: 15px;
+        height: 260px;
+    }
+
+    #h1nandi {
+        color: darkblue;
+    }
+
+    #funworld {
+        background-color: burlywood;
+        padding: 10px;
+        margin: 10px;
+        height: 260px;
+    }
+
+    #h1fun {
+        color: brown;
+    }
+</style>
+
+<head>
+    <title> Multiple webpage</title>
+</head>
+
+<body>
+    <div id="tab">
+        <button onclick="show('laalbagh')">Laal Bagh</button>
+        <button onclick="show('nandihills')">Nandi Hills</button>
+        <button onclick="show('funworld')">Funworld</button>
+    </div>
+
+    <div id="laalbagh">
+        <img src="laal bagh.jpg">
+        <h3 id="h1laal">Laal Bagh</h3>
+        <p>
+            Lalbagh Botanical Garden is located in Bangalore and is nationally and
+            internationally renowned centre for botanical artwork, scientific study
+            of plants and also conservation of plants. A haven for all nature lovers,
+            Lal Bagh covers an area 240 acres in the heart of the city and has nearly
+            1,854 species of plants. It was commissioned by Hyder Ali in 1760 and completed by his son Tipu Sultan.
+            The garden features rare plants of French, Persian and Afghani origin
+            and has attained the status of a Government Botanical Garden. The Lal Bagh Rock which
+            is over 3000 million years old is found here and is a major tourist attraction.Flower shows are
+            conducted
+            every year during the week of Republic day and Independence day, to educate people about the variety of
+            flora and develop public interest in plant conservation and cultivation.[18] In August 2022, on the
+            occasion
+            of 75th Independence Day, flower show was conducted in the honour of Rajkumar and Puneeth Rajkumar
+            depicting
+            their life journey. It was attended by 8.34 lakh people.[19]
+        </p>
+    </div>
+    <div id="nandihills">
+        <img src="nandihills.jpg">
+        <h3 id="h1nandi">Nandi Hills</h3>
+        <p>There are only a few places on earth which provide an environment filled with sheer excitement
+            and tranquility at the same time. The Nandi Hills located near the city of Bangalore is one such
+            paradise for every traveler around the world. The breathtaking view and the entire trekking experience
+            that you get here is matchless and quite popular among the residents of the city and its surroundings.
+            There are many stories about the origin of the name Nandi Hills. During the Chola period, Nandi Hills
+            was called
+            Anandagiri meaning The Hill of Happiness.[6] It is also perhaps called Nandi Hills because the hills
+            resemble a
+            sleeping bull. Another theory holds that the hill gets its name from an ancient, 1300-year-old,
+            Dravidian-style
+            temple, and for the Nandi (bull), statue situated on this hill.[citation needed]
+        </p>
+    </div>
+    <div id="funworld">
+        <img src="funworld.jpg">
+        <h3 id="h1fun">Fun Word Water Park</h3>
+        <p>
+            Location of Fun World Amusement Park, Bangalore: Palace Ground, J C Nagar, Bangalore
+            Timings of Fun World Amusement Park, Bagngalore: Fun World 11:00 am to 07:30 pm; every
+            day Water World 11:00 am to 04:30 pm; every day ...
+            Entry Fee of Fun World Amusement Park, Bangalore: Fun World ₹ 750 per person Water World
+            ₹ 900 per person ...
+            Give a kick-start to your weekend at Fun World Amusement Park in Bangalore.
+            Located in the heart of the city centre, the Fun World Amusement Park is one of
+            the finest and oldest amusement parks in India that promises a heavy dose of
+            excitement with an experience filled with unlimited fun, laughter, and luxury.
+        </p>
+    </div>
+
+    </div>
+</body>
+<script>
+    document.getElementById("laalbagh").style.display = "block";
+    document.getElementById("nandihills").style.display = "none";
+    document.getElementById("funworld").style.display = "none";
+    function show(pagename) {
+        document.getElementById("laalbagh").style.display = "none";
+        document.getElementById("nandihills").style.display = "none";
+        document.getElementById("funworld").style.display = "none";
+        document.getElementById(pagename).style.display = "block";
+    }
+    document.getElementById("laalbagh").style.display = "none";
+    document.getElementById("nandihills").style.display = "none";
+    document.getElementById("funworld").style.display = "none";
+    function show(pagename) {
+        document.getElementById("laalbagh").style.display = "none";
+        document.getElementById("nandihills").style.display = "none";
+        document.getElementById("funworld").style.display = "none";
+        document.getElementById(pagename).style.display = "block";
+    }
+    document.getElementById("laalbagh").style.display = "none";
+    document.getElementById("nandihills").style.display = "none";
+    document.getElementById("funworld").style.display = "block";
+    function show(pagename) {
+        document.getElementById("laalbagh").style.display = "none";
+        document.getElementById("nandihills").style.display = "none";
+        document.getElementById("funworld").style.display = "none";
+        document.getElementById(pagename).style.display = "block";
+    }
+</script>
+
+</html>

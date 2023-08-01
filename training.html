@@ -1,0 +1,93 @@
+<html>
+<style>
+    h1 {
+        color: black;
+    }
+
+
+    .button {
+        background-color: lightgrey;
+        color: white;
+        float: left;
+        border: none;
+        cursor: pointer;
+        padding: 0px;
+        font-size: 20px;
+        width: 25%;
+        height: 60px;
+    }
+
+    #tomato {
+        background-color: aquamarine;
+        padding: 10px;
+        margin: 10px;
+        height: 260px;
+    }
+
+    img {
+        width: 350px;
+        float: right;
+        align-items: center;
+    }
+
+    #onion {
+        background-color: blanchedalmond;
+        padding: 10px;
+        margin: 15px;
+        height: 260px;
+    }
+</style>
+
+<head>
+    <title>Vegetables Price</title>
+</head>
+
+<body>
+    <div class="Vag">
+        <div id="Tomato">
+            <img src="tomato.jpg">
+            <h3 id="h1laal">Tomato</h3>
+            <p>
+                Tomato price is 40/kg
+            </p>
+            <script>
+                function calculateTomato() {
+                    var quantity = parseInt(document.getElementById("tomatoQuantity").value);
+                    var price = 40;
+                    var total = quantity * price;
+                    document.getElementById("tomatoTotalAmount").innerHTML = "Total Amount: $" + total
+                }
+            </script>
+            <form>
+                <label for="tomatoQuantity">Quantity:</label>
+                <input type="number" id="tomatoQuantity" name="quantity">
+                <button type="button" onclick="calculateTomato()">Calculate</button>
+            </form>
+            <p id="tomatoTotalAmount"></p>
+        </div>
+
+        <div id="Onion">
+            <img src="onion.jpg">
+            <h3 id="h1laal">Onion</h3>
+            <p>
+                Onion price is 30/kg
+            </p>
+            <script>
+                function calculateOnion() {
+                    var quantity = parseInt(document.getElementById("onionQuantity").value);
+                    var price = 30;
+                    var total = quantity * price;
+                    document.getElementById("onionTotalAmount").innerHTML = "Total Amount: $" + total
+                }
+            </script>
+            <form>
+                <label for="onionQuantity">Quantity:</label>
+                <input type="text" id="onionQuantity" name="quantity">
+                <button type="button" onclick="calculateOnion()">Calculate</button>
+            </form>
+            <p id="onionTotalAmount"></p>
+        </div>
+    </div>
+</body>
+
+</html>

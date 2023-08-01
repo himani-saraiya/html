@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title> home</title>
+</head>
+
+<body>
+    <script>
+        function oncarto() {
+            var check = false;
+            var cookievalue = "";
+
+            if (document.getElementById("b1").checked) {
+                check = true;
+                var quantity = document.getElementById("q1").value;
+                var price = 399;
+                var total = price * quantity;
+                cookievalue = "Girls pink bag," + price + "," + quantity + "," + total;
+            }
+
+            if (document.getElementById("b2").checked) {
+                // Add your code here for the second checkbox
+                // ...
+            }
+
+            if (document.getElementById("b3").checked) {
+                check = true;
+                var quantity = document.getElementById("q3").value;
+                var total = 500 * quantity;
+                cookievalue += "Bheem bag," + price + "," + quantity + "," + total;
+                price = 500;
+            }
+
+            if (document.getElementById("nb1").checked) {
+                check = true;
+                var quantity = document.getElementById("q4").value;
+                var total = 50 * quantity;
+                cookievalue += "NoteBook (set of 3)," + total;
+            }
+
+            if (document.getElementById("cp1").checked) {
+                // Add your code here for the checkbox with id "cp1"
+                // ...
+            }
+
+            if (document.getElementById("p1").checked) {
+                check = true;
+                var quantity = document.getElementById("q6").value;
+                var total = 80 * quantity;
+                cookievalue += "Pencil Box," + total;
+
+                if (document.getElementById("11").checked) {
+                    check = true;
+                    var quantity = document.getElementById("q7").value;
+                    var total = 110 * quantity;
+                    cookievalue += "Angry Bird Lunch box," + total;
+                }
+
+                if (document.getElementById("12").checked) {
+                    check = true;
+                    var quantity = document.getElementById("q8").value;
+                    var total = 120 * quantity;
+                    cookievalue += "cartoon lunch box," + total;
+                }
+
+                if (document.getElementById("el").checked) {
+                    check = true;
+                    var quantity = document.getElementById("q9").value;
+                    var total = 50 * quantity;
+                    cookievalue += "Eraser (set of 4)," + total;
+                }
+            }
+
+            if (!check) {
+                alert("No item selected");
+            } else {
+                document.cookie = cookievalue;
+                window.location = "bill.html";
+            }
+        }
+    </script>
+</body>
+
+</html>

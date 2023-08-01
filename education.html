@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        color: rgb(20, 243, 232);
+    }
+
+    h1 {
+        color: black;
+        text-align: center;
+    }
+
+    #tab {
+        background-color: rgb(36, 23, 214);
+        height: 60px;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    button {
+        color: rgb(8, 8, 8);
+        float: left;
+        border: none;
+        cursor: pointer;
+        padding: 0px;
+        font-size: 20px;
+        width: 25%;
+        height: 60px;
+        background-color: rgb(226, 126, 12);
+        border-color: black;
+
+    }
+
+    #Home {
+        background-color: rgb(246, 250, 250);
+        padding: 10px;
+        margin: 10px;
+        height: 260px;
+    }
+
+    #h {
+        background-color: rgb(114, 117, 156);
+        padding: 10px;
+        margin: 10px;
+        height: 260px;
+    }
+
+    #hh {
+        background-color: rgb(114, 117, 156);
+        padding: 10px;
+        margin: 10px;
+        height: 260px;
+    }
+
+    img {
+        width: 350px;
+        float: right;
+    }
+
+    #h1 {
+        color: rgb(10, 9, 10);
+    }
+
+    #h12 {
+        background-color: rgb(69, 86, 95);
+        padding: 10px;
+        margin: 10px;
+        height: 260px;
+    }
+
+    #c {
+        background-color: rgb(114, 117, 156);
+        padding: 10px;
+        margin: 10px;
+        height: 260px;
+    }
+
+
+    #child {
+        background-color: rgb(252, 252, 253);
+        padding: 10px;
+        margin: 10px;
+        height: 260px;
+    }
+
+    #h1c {
+        color: darkblue;
+    }
+
+    #parents {
+        background-color: rgb(249, 252, 251);
+        padding: 10px;
+        margin: 10px;
+        height: 260px;
+    }
+
+    #p {
+        background-color: rgb(114, 117, 156);
+        padding: 10px;
+        margin: 10px;
+        height: 260px;
+    }
+
+    #pp {
+        background-color: rgb(101, 104, 139);
+        padding: 10px;
+        margin: 10px;
+        height: 260px;
+    }
+
+    #h1p {
+        color: brown;
+    }
+
+    p {
+        color: rgb(237, 247, 247);
+    }
+</style>
+
+<head>
+    <title> Education Awareness</title>
+</head>
+
+<body>
+    <h1> Education Awareness for students and parents</h1>
+    <div id="tab">
+        <button onclick="show('Home')">Home</button>
+        <button onclick="show('child')">Child Awareness</button>
+        <button onclick="show('parents')">Parent Awareness</button>
+    </div>
+
+    <div id="Home">
+        <div id="h">
+            <img src="edu1.jpeg">
+            <h3 id="h1">About of education awareness </h3>
+            <p>
+                Education awareness is of utmost importance in today's society.
+                It plays a significant role in empowering individuals and fostering social development.
+                By raising awareness about the value of education, we can create a ripple effect that transforms
+                lives and communities. Education equips individuals with knowledge, skills, and critical thinking
+                abilities
+                necessary to navigate the complexities of the modern world.
+            </p>
+        </div>
+        <div id="hh">
+            <img src="Edu2.jpeg">
+            <p>
+                Education is of paramount importance in society for numerous reasons. Firstly, education equips
+                individuals
+                with knowledge and skills necessary for personal and professional success. It provides a foundation for
+                learning and empowers individuals to think critically, solve problems, and make informed decisions.
+                Education enhances cognitive abilities, fosters creativity, and broadens perspectives, enabling
+                individuals
+                to adapt to an ever-changing world.
+            </p>
+        </div>
+
+    </div>
+    <div id="child">
+        <div id="c">
+            <img src="edu3.jpeg">
+            <h3 id="h1c">Education awareness for child</h3>
+            <p>
+                Storytelling: Use real-life stories and examples to illustrate the impact of education.
+                Highlight inspiring individuals who have achieved success through education, emphasizing
+                how it has transformed their lives and opened doors of opportunity. This personal connection
+                can inspire students and make the importance of education more relatable.
+            </p>
+
+        </div>
+        <div id="h12">
+            <img src="edu5.jpeg">
+            <p>
+                Interactive discussions: Encourage open dialogues and discussions in the classroom about the value
+                of education. Ask thought-provoking questions that stimulate critical thinking and allow students
+                to express their opinions. Create a safe and inclusive environment where students can freely share
+                their experiences and perspectives.
+            </p>
+        </div>
+    </div>
+
+    <div id="parents">
+        <div id="p">
+            <img src="edu4.jpeg">
+            <h3 id="h1p">Aware parents for education</h3>
+            <p>
+                Parent-Teacher Meetings: Use parent-teacher meetings as an opportunity to discuss the importance of
+                education and its impact on their child's development. Share specific examples of how education nurtures
+                critical thinking, problem-solving skills, and a love for learning. Emphasize the role of education in
+                opening doors to better opportunities in the future.
+            </p>
+        </div>
+        <div id="pp">
+            <img src="edu6.jpeg">
+            <p>
+                Parent Education Workshops: Organize workshops or seminars specifically aimed at parents to educate them
+                on the importance of education. These sessions can cover various topics, such as the benefits of early
+                childhood education, the significance of parental involvement in education, and strategies for
+                supporting
+                their child's educational journey at home.
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("Home").style.display = "block";
+    document.getElementById("child").style.display = "none";
+    document.getElementById("parents").style.display = "none";
+    function show(pagename) {
+        document.getElementById("Home").style.display = "none";
+        document.getElementById("child").style.display = "none";
+        document.getElementById("parents").style.display = "none";
+        document.getElementById(pagename).style.display = "block";
+    }
+    document.getElementById("Home").style.display = "none";
+    document.getElementById("child").style.display = "none";
+    document.getElementById("parents").style.display = "none";
+    function show(pagename) {
+        document.getElementById("Home").style.display = "none";
+        document.getElementById("child").style.display = "none";
+        document.getElementById("parents").style.display = "none";
+        document.getElementById(pagename).style.display = "block";
+    }
+    document.getElementById("Home").style.display = "none";
+    document.getElementById("child").style.display = "none";
+    document.getElementById("parents").style.display = "block";
+    function show(pagename) {
+        document.getElementById("Home").style.display = "none";
+        document.getElementById("child").style.display = "none";
+        document.getElementById("parents").style.display = "none";
+        document.getElementById(pagename).style.display = "block";
+    }
+</script>
+
+</html>

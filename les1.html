@@ -1,0 +1,132 @@
+<HTML>
+
+<HEAD>
+    <TITLE>Registration Form</TITLE>
+</HEAD>
+
+<BODY bgcolor="lightblue">
+    <h1>
+        <center>Registration Form</center>
+    </h1>
+    <FORM id="form_Registration" action="form.html">
+        <center>
+            <TABLE BORDER="0">
+                <TR>
+                    <TD width "12%">First Name</TD>
+                    <TD width="1%">&nbsp;</TD>
+                    <TD> <INPUT type="textbox" id="txtFirstName"></TD>
+                    <td>
+                        <p id="first_name" style="color: red;"></p>
+                    </td>
+                </TR>
+                <TR>
+                    <TD>Middle Name</TD>
+                    <TD>&nbsp;</TD>
+                    <TD><INPUT type="text box" id="txtMiddleName"></TD>
+                    <td>
+                        <p id="midname" style="color: red;"></p>
+                    </td>
+                </TR>
+                <TR>
+                    <TD>Last Name</TD>
+                    <TD>&nbsp;</TD>
+                    <TD><INPUT type="text box" id="txtLastName"></TD>
+                    <td>
+                        <p id="lastname" style="color: red;"></p>
+                    </td>
+                </TR>
+                <TR>
+                    <TD>DOB</TD>
+                    <TD>&nbsp;</TD>
+                    <TD><INPUT type="number box" id="DOB"></TD>
+                    <td>
+                        <p id="dob" style="color: red;"></p>
+                    </td>
+                </TR>
+                <TR>
+
+                    <TD id="Hobby">Hobby</TD>
+                    <TD>&nbsp;</TD>
+                    <TD>
+                        <INPUT type="checkbox" name="sing" value="song"> Singing
+                        <INPUT type="checkbox" name="read" value="read">Reading
+                        <INPUT type="checkbox" name="dance" value="dance"> Dancing
+                        <INPUT type="checkbox" name="sports" value="sports">Sports
+                    </TD>
+                    <td>
+                        <p id="hobby" style="color: red;"></p>
+                    </td>
+
+
+                </TR>
+                <TR>
+                    <TD id="Gender">Gender</TD>
+                    <TD>&nbsp;</TD>
+                    <TD>
+                        <INPUT type="radio" name="Gender" value="male"> Male
+                        <INPUT type="radio" name="Gender" value="female">Female
+                    </TD>
+                    <td>
+                        <p id="gender" style="color: red;"></p>
+                    </td>
+                </TR>
+                <TR>
+                    <TD>Email</TD>
+                    <TD>&nbsp;</TD>
+                    <TD><INPUT type="text box" id="Email"></TD>
+                    <td>
+                        <p id="email" style="color: red;"></p>
+                    </td>
+                </TR>
+                <TR>
+                    <TD id="City">City</TD>
+                    <TD>&nbsp;</TD>
+                    <TD>
+                        <Select Name="cmbCity">
+                            <Option> </Option>
+                            <Option>Ahmedabad</Option>
+                            <Option>Baroda</Option>
+                            <Option>Rajkot</Option>
+                            <Option>Surat</Option>
+                        </Select>
+                    </TD>
+                    <td>
+                        <p id="city" style="color: red;"></p>
+                    </td>
+                </TR>
+                <TR>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <p id="password-error" style="color: red;"></p>
+                </TR>
+                <TR>
+                    <TD>&nbsp;</TD>
+                    <TD>&nbsp;</TD>
+                    <TD><INPUT type="submit" name="cmdSubmit" value="Submit">
+                        <INPUT type="reset" name="cmdReset" value="Reset">
+                    </TD>
+                </TR>
+                <tr>
+                    <td>
+                        <textarea id="mytextarea" rows="5" cols="70"></textarea>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                        <span id="charCount">/100 characters remaining</span>
+                    </td>
+                </tr>
+
+            </TABLE>
+        
+        </center>
+    </FORM>
+    <script src="./l.js"></script>
+
+</BODY>
+
+</HTML>
+
+</html>
